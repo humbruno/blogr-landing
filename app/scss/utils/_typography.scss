@@ -1,0 +1,20 @@
+:root {
+  --fontPrimary: "Overpass", sans-serif; // weights 300 600
+  --fontSecondary: "Ubuntu", sans-serif; // weights 400 500 700
+}
+
+html {
+  font-size: 100%;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}

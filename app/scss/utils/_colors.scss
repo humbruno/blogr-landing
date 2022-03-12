@@ -1,0 +1,13 @@
+:root {
+  --lightRed: hsl(356, 100%, 66%); // CTA text
+  --veryLightRed: hsl(355, 100%, 74%); // CTA hover background
+  --veryDarkBlue: hsl(208, 49%, 24%); // headings
+  --white: hsl(0, 0%, 100%); // text
+  --grayishBlue: hsl(240, 2%, 79%); // footer text
+  --veryDarkGrayishBlue: hsl(207, 13%, 34%); //  body copy
+  --veryDarkBlackBlue: hsl(240, 10%, 16%); // footer background
+  --heroGradientStart: hsl(13, 100%, 72%);
+  --heroGradientEnd: hsl(353, 100%, 62%);
+  --bodyGradientStart: hsl(237, 17%, 21%);
+  --bodyGradientEnd: hsl(237, 23%, 32%);
+}
