@@ -1,0 +1,90 @@
+@use "utils" as *;
+
+.header {
+  font-family: var(--fontSecondary);
+  font-weight: 500;
+
+  background-color: var(--lightRed);
+  background: url("../images/bg-pattern-intro-desktop.svg"),
+    linear-gradient(to right, var(--heroGradientStart), var(--heroGradientEnd));
+  background-position: 28% 52%;
+  background-size: 230%;
+  background-repeat: no-repeat;
+  background-blend-mode: soft-light;
+  border-bottom-left-radius: rem(100);
+
+  &__menu {
+    @include breakpoint(large) {
+      display: none;
+    }
+  }
+
+  &__links-desktop {
+    font-size: rem(14);
+
+    .link-wrapper {
+      display: inline;
+      position: relative;
+
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+
+    span {
+      padding: 5px;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @include breakpoint-down(medium) {
+      display: none;
+    }
+  }
+
+  &__buttons {
+    @include breakpoint-down(medium) {
+      display: none;
+    }
+
+    button {
+      font-family: var(--fontSecondary);
+      font-weight: 500;
+      color: white;
+      border: 0;
+      background-color: transparent;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .btn-cta {
+    font-weight: 700;
+    background-color: var(--white);
+    color: var(--lightRed);
+    padding: 15px 40px;
+    margin-left: 15px;
+    border-radius: 30px;
+    transition: all 150ms ease-in-out;
+
+    &:hover {
+      background-color: var(--veryLightRed);
+      color: var(--white);
+    }
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 170px;
+
+  @include breakpoint-down(medium) {
+    padding: 50px 20px;
+  }
+}

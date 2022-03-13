@@ -1,1 +1,7 @@
 @use "utils" as *;
+@use "header";
+@use "hamburgerMenu";
+
+body {
+  min-height: 100vh;
+}
