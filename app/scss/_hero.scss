@@ -1,7 +1,81 @@
+@use "utils" as *;
+
 .hero {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  text-align: center;
   color: var(--white);
-  //padding: 150px 320px;
+  min-height: rem(300);
+  font-family: var(--fontPrimary);
+
+  @include breakpoint-down(medium) {
+    padding: 0 15px;
+  }
+
+  &__title {
+    font-size: rem(40);
+  }
+
+  &__description {
+  }
+
+  &__buttons {
+    padding: 30px 0 170px 0;
+
+    button {
+      font-family: var(--fontSecondary);
+      font-weight: 500;
+      padding: 15px 40px;
+      border-radius: 30px;
+      transition: all 150ms ease-in-out;
+
+      &:nth-of-type(1) {
+        background-color: var(--white);
+        color: var(--lightRed);
+        border: 0;
+        margin-right: 10px;
+
+        @include breakpoint(large) {
+          &:hover {
+            cursor: pointer;
+            background-color: var(--veryLightRed);
+            color: var(--white);
+          }
+        }
+
+        @include breakpoint-down(medium) {
+          margin-right: 5px;
+
+          &:active {
+            background-color: var(--veryLightRed);
+            color: var(--white);
+          }
+        }
+      }
+
+      &:nth-of-type(2) {
+        background-color: transparent;
+        color: var(--white);
+        border: 1px solid var(--white);
+
+        @include breakpoint(large) {
+          &:hover {
+            cursor: pointer;
+            background-color: var(--white);
+            color: var(--lightRed);
+          }
+        }
+
+        @include breakpoint-down(medium) {
+          &:active {
+            cursor: pointer;
+            background-color: var(--white);
+            color: var(--lightRed);
+          }
+        }
+      }
+    }
+  }
 }

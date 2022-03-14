@@ -1,0 +1,26 @@
+@use "utils" as *;
+
+.main {
+  &__first {
+    padding-left: 170px;
+    padding-top: 170px;
+    text-align: left;
+    display: flex;
+    h2,
+    h3 {
+      color: var(--veryDarkBlue);
+    }
+
+    p {
+      color: var(--veryDarkGrayishBlue);
+    }
+
+    &-text {
+      flex: 1;
+    }
+
+    &-illustration {
+      flex: 1;
+    }
+  }
+}
