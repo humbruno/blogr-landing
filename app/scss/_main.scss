@@ -175,3 +175,79 @@ main {
     }
   }
 }
+
+// THIRD SECTION
+
+.bottom-section {
+  position: relative;
+  overflow: hidden;
+  padding: rem(120) rem(150) 22rem 17rem;
+
+  @include breakpoint-down(medium) {
+    padding: 50px 20px;
+  }
+
+  h2 {
+    text-align: center;
+    color: var(--veryDarkBlue);
+  }
+
+  .img-mobile {
+    display: none;
+
+    @include breakpoint-down(medium) {
+      display: initial;
+      width: 100%;
+    }
+  }
+
+  .img-desktop {
+    display: block;
+    position: absolute;
+    left: -200px;
+    top: 10%;
+
+    @include breakpoint-down(medium) {
+      display: none;
+    }
+  }
+
+  .content__wrapper {
+    @include breakpoint-down(medium) {
+      text-align: center;
+      margin-top: rem(40);
+    }
+  }
+
+  .text__wrapper {
+    width: 100%;
+    text-align: left;
+    margin-left: 50%;
+
+    @include breakpoint-down(medium) {
+      width: 100%;
+      text-align: center;
+    }
+
+    h3 {
+      margin-top: rem(180);
+      color: var(--veryDarkBlue);
+
+      @include breakpoint-down(medium) {
+        margin-top: rem(40);
+      }
+    }
+
+    h3:nth-of-type(2) {
+      margin-top: rem(80);
+
+      @include breakpoint-down(medium) {
+        margin-top: rem(40);
+      }
+    }
+
+    p {
+      color: var(--veryDarkGrayishBlue);
+    }
+  }
+}
