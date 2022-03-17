@@ -213,7 +213,10 @@ main {
   }
 
   .content__wrapper {
+    display: flex;
+
     @include breakpoint-down(medium) {
+      display: initial;
       text-align: center;
       margin-top: rem(40);
     }
@@ -225,8 +228,8 @@ main {
     margin-left: 50%;
 
     @include breakpoint-down(medium) {
-      width: 100%;
       text-align: center;
+      margin-left: 0;
     }
 
     h3 {
