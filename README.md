@@ -21,41 +21,26 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./images/final-screenshot.png)
 
 ### Links
 
-- [Repository URL](https://your-solution-url.com)
-- [Live Site URL](https://your-live-site-url.com)
+- [Repository URL](https://github.com/humbruno/blogr-landing)
+- [Live Site URL](https://humbruno.github.io/blogr-landing/)
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- SCSS
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+- JavaScript
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+Making navbars is hard! This was by far the biggest project I've worked on so far, and while making a navbar is quite frustrating for someone with my level of experience, I definitely learned a lot. It was also great continuation practice to handling images and how to properly use absolute positioning.
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
+My confidence in JavaScript is growing steadily and I look forward to doing more exciting things with it!
